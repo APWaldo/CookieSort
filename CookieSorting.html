@@ -42,11 +42,23 @@
 			 * create a code that makes this happen.
 			 */
 			
-			for(var i=0; i<4; i++) {
+			for(var i=0; i<myCookies.length; i++) {
+			//console.log(i);
 			var currentCookie = myCookies [i];
-			console.log (i)
-			console.log (currentCookie);
-			}
+			//console.log (currentCookie);
+			if (currentCookie.shape == "square") {
+				//console.log(currentCookie);
+			//Because shape is square, add the currentCookie to myFaves list.
+				myFaves.push(currentCookie);
+			//If not square, then add the currentCookie to theRest list.
+			} else {
+				theRest.push(currentCookie);
+			} //this is the end of my if else statement.
+			} //this is the end of the for loop.
+		// Printing out the two new groups of cookies.
+		console.log ("Finished Lists");
+		console.log(myFaves);
+		console.log(theRest);
 
 		</script>
 	</body>
